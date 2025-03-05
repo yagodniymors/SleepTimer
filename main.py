@@ -21,7 +21,7 @@ class MainWindow(QWidget):
         self.timer = QTimer()
         self.timer.timeout.connect(self.update)
 
-        self.line = QLineEdit('Время в минутах')
+        self.line = QLineEdit('Время в годах')
         self.line.textChanged.connect(self.line_change)
         self.slider = QSlider(Qt.Orientation.Horizontal, self)
         self.slider.setGeometry(50, 50, 200, 50)
